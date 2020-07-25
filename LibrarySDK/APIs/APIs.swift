@@ -6,6 +6,8 @@ class APIManager {
 }
 
 public class BooksApi {
+    public init() {}
+
     public func getBooks() -> Record? {
         let url = APIManager.baseURL
         var record: Record?
