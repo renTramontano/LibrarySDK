@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F97FB50524CB1C2200C46347 /* LibrarySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F97FB50324CB1C2200C46347 /* LibrarySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F97FB50E24CB1F5E00C46347 /* BooksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB50D24CB1F5E00C46347 /* BooksApi.swift */; };
 		F97FB51024CB1F6800C46347 /* Libri.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB50F24CB1F6800C46347 /* Libri.swift */; };
 		F97FB51424CB20ED00C46347 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB51324CB20ED00C46347 /* Record.swift */; };
@@ -16,7 +15,6 @@
 
 /* Begin PBXFileReference section */
 		F97FB50024CB1C2200C46347 /* LibrarySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibrarySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F97FB50324CB1C2200C46347 /* LibrarySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibrarySDK.h; sourceTree = "<group>"; };
 		F97FB50424CB1C2200C46347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F97FB50D24CB1F5E00C46347 /* BooksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksApi.swift; sourceTree = "<group>"; };
 		F97FB50F24CB1F6800C46347 /* Libri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Libri.swift; sourceTree = "<group>"; };
@@ -54,7 +52,6 @@
 		F97FB50224CB1C2200C46347 /* LibrarySDK */ = {
 			isa = PBXGroup;
 			children = (
-				F97FB50324CB1C2200C46347 /* LibrarySDK.h */,
 				F97FB50424CB1C2200C46347 /* Info.plist */,
 				F97FB51124CB20B500C46347 /* APIs */,
 				F97FB51224CB20C100C46347 /* Models */,
@@ -87,7 +84,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F97FB50524CB1C2200C46347 /* LibrarySDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
