@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F97FB50524CB1C2200C46347 /* LibrarySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F97FB50324CB1C2200C46347 /* LibrarySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F97FB50E24CB1F5E00C46347 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB50D24CB1F5E00C46347 /* APIs.swift */; };
+		F97FB50E24CB1F5E00C46347 /* BooksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB50D24CB1F5E00C46347 /* BooksApi.swift */; };
 		F97FB51024CB1F6800C46347 /* Libri.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB50F24CB1F6800C46347 /* Libri.swift */; };
 		F97FB51424CB20ED00C46347 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB51324CB20ED00C46347 /* Record.swift */; };
+		F985E1F024D21659008FE395 /* APIManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985E1EF24D21659008FE395 /* APIManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F97FB50024CB1C2200C46347 /* LibrarySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibrarySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97FB50324CB1C2200C46347 /* LibrarySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibrarySDK.h; sourceTree = "<group>"; };
 		F97FB50424CB1C2200C46347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F97FB50D24CB1F5E00C46347 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		F97FB50D24CB1F5E00C46347 /* BooksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksApi.swift; sourceTree = "<group>"; };
 		F97FB50F24CB1F6800C46347 /* Libri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Libri.swift; sourceTree = "<group>"; };
 		F97FB51324CB20ED00C46347 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		F985E1EF24D21659008FE395 /* APIManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,8 @@
 		F97FB51124CB20B500C46347 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
-				F97FB50D24CB1F5E00C46347 /* APIs.swift */,
+				F985E1EF24D21659008FE395 /* APIManger.swift */,
+				F97FB50D24CB1F5E00C46347 /* BooksApi.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -157,8 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F97FB50E24CB1F5E00C46347 /* APIs.swift in Sources */,
+				F97FB50E24CB1F5E00C46347 /* BooksApi.swift in Sources */,
 				F97FB51024CB1F6800C46347 /* Libri.swift in Sources */,
+				F985E1F024D21659008FE395 /* APIManger.swift in Sources */,
 				F97FB51424CB20ED00C46347 /* Record.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
