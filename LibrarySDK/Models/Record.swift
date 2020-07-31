@@ -1,9 +1,9 @@
 import Foundation
 
 public struct Record: Codable, Hashable {
-    public let records: [Libri]
+    public let records: [Book]
 
-    public init(records: [Libri]) {
+    public init(records: [Book]) {
         self.records = records
     }
 }

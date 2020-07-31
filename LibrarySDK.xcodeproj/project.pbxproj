@@ -8,18 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		F97FB50E24CB1F5E00C46347 /* BooksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB50D24CB1F5E00C46347 /* BooksApi.swift */; };
-		F97FB51024CB1F6800C46347 /* Libri.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB50F24CB1F6800C46347 /* Libri.swift */; };
+		F97FB51024CB1F6800C46347 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB50F24CB1F6800C46347 /* Book.swift */; };
 		F97FB51424CB20ED00C46347 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB51324CB20ED00C46347 /* Record.swift */; };
+		F982A31E24D31CFE006767CE /* LibrarySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97FB50024CB1C2200C46347 /* LibrarySDK.framework */; };
+		F982A32424D31D6F006767CE /* BooksApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2B1C924D2FB0F00D14E7D /* BooksApiTests.swift */; };
+		F982A32524D31D8C006767CE /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F982A2FA24D30D9D006767CE /* OHHTTPStubs.framework */; };
+		F982A32624D31D9F006767CE /* LibrarySDKMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F982A30024D312E5006767CE /* LibrarySDKMocks.swift */; };
+		F982A32B24D31EE0006767CE /* OHHTTPStubs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F982A32A24D31EE0006767CE /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F985E1F024D21659008FE395 /* APIManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985E1EF24D21659008FE395 /* APIManger.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F982A31F24D31CFE006767CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F97FB4F724CB1C2200C46347 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F97FB4FF24CB1C2200C46347;
+			remoteInfo = LibrarySDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F982A32924D31EBB006767CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F982A32B24D31EE0006767CE /* OHHTTPStubs.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F97FB50024CB1C2200C46347 /* LibrarySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibrarySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97FB50424CB1C2200C46347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F97FB50D24CB1F5E00C46347 /* BooksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksApi.swift; sourceTree = "<group>"; };
-		F97FB50F24CB1F6800C46347 /* Libri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Libri.swift; sourceTree = "<group>"; };
+		F97FB50F24CB1F6800C46347 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		F97FB51324CB20ED00C46347 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		F982A2FA24D30D9D006767CE /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		F982A30024D312E5006767CE /* LibrarySDKMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySDKMocks.swift; sourceTree = "<group>"; };
+		F982A31924D31CFE006767CE /* LibrarySDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibrarySDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F982A31D24D31CFE006767CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F982A32A24D31EE0006767CE /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		F985E1EF24D21659008FE395 /* APIManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManger.swift; sourceTree = "<group>"; };
+		F9A2B1C924D2FB0F00D14E7D /* BooksApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksApiTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,14 +65,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F982A31624D31CFE006767CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F982A32524D31D8C006767CE /* OHHTTPStubs.framework in Frameworks */,
+				F982A31E24D31CFE006767CE /* LibrarySDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F97FB4F624CB1C2200C46347 = {
 			isa = PBXGroup;
 			children = (
+				F982A32A24D31EE0006767CE /* OHHTTPStubs.framework */,
 				F97FB50224CB1C2200C46347 /* LibrarySDK */,
+				F982A31A24D31CFE006767CE /* LibrarySDKTests */,
 				F97FB50124CB1C2200C46347 /* Products */,
+				F982A2F924D30D9D006767CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				F97FB50024CB1C2200C46347 /* LibrarySDK.framework */,
+				F982A31924D31CFE006767CE /* LibrarySDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F97FB50424CB1C2200C46347 /* Info.plist */,
+				F985E1EF24D21659008FE395 /* APIManger.swift */,
 				F97FB51124CB20B500C46347 /* APIs */,
 				F97FB51224CB20C100C46347 /* Models */,
 			);
@@ -62,7 +111,6 @@
 		F97FB51124CB20B500C46347 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
-				F985E1EF24D21659008FE395 /* APIManger.swift */,
 				F97FB50D24CB1F5E00C46347 /* BooksApi.swift */,
 			);
 			path = APIs;
@@ -71,10 +119,44 @@
 		F97FB51224CB20C100C46347 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F97FB50F24CB1F6800C46347 /* Libri.swift */,
+				F97FB50F24CB1F6800C46347 /* Book.swift */,
 				F97FB51324CB20ED00C46347 /* Record.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F982A2F924D30D9D006767CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F982A2FA24D30D9D006767CE /* OHHTTPStubs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F982A2FF24D312A8006767CE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F982A30024D312E5006767CE /* LibrarySDKMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		F982A31A24D31CFE006767CE /* LibrarySDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				F982A31D24D31CFE006767CE /* Info.plist */,
+				F9A2B1C824D2F91300D14E7D /* APIs */,
+				F982A2FF24D312A8006767CE /* Mocks */,
+			);
+			path = LibrarySDKTests;
+			sourceTree = "<group>";
+		};
+		F9A2B1C824D2F91300D14E7D /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				F9A2B1C924D2FB0F00D14E7D /* BooksApiTests.swift */,
+			);
+			path = APIs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,18 +190,41 @@
 			productReference = F97FB50024CB1C2200C46347 /* LibrarySDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F982A31824D31CFE006767CE /* LibrarySDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F982A32124D31CFE006767CE /* Build configuration list for PBXNativeTarget "LibrarySDKTests" */;
+			buildPhases = (
+				F982A31524D31CFE006767CE /* Sources */,
+				F982A31624D31CFE006767CE /* Frameworks */,
+				F982A31724D31CFE006767CE /* Resources */,
+				F982A32924D31EBB006767CE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F982A32024D31CFE006767CE /* PBXTargetDependency */,
+			);
+			name = LibrarySDKTests;
+			productName = LibrarySDKTests;
+			productReference = F982A31924D31CFE006767CE /* LibrarySDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		F97FB4F724CB1C2200C46347 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Renato Tramontano";
 				TargetAttributes = {
 					F97FB4FF24CB1C2200C46347 = {
 						CreatedOnToolsVersion = 11.5;
 						LastSwiftMigration = 1150;
+					};
+					F982A31824D31CFE006767CE = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
@@ -137,12 +242,20 @@
 			projectRoot = "";
 			targets = (
 				F97FB4FF24CB1C2200C46347 /* LibrarySDK */,
+				F982A31824D31CFE006767CE /* LibrarySDKTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F97FB4FE24CB1C2200C46347 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F982A31724D31CFE006767CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -157,13 +270,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				F97FB50E24CB1F5E00C46347 /* BooksApi.swift in Sources */,
-				F97FB51024CB1F6800C46347 /* Libri.swift in Sources */,
+				F97FB51024CB1F6800C46347 /* Book.swift in Sources */,
 				F985E1F024D21659008FE395 /* APIManger.swift in Sources */,
 				F97FB51424CB20ED00C46347 /* Record.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F982A31524D31CFE006767CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F982A32624D31D9F006767CE /* LibrarySDKMocks.swift in Sources */,
+				F982A32424D31D6F006767CE /* BooksApiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F982A32024D31CFE006767CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F97FB4FF24CB1C2200C46347 /* LibrarySDK */;
+			targetProxy = F982A31F24D31CFE006767CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F97FB50624CB1C2200C46347 /* Debug */ = {
@@ -337,6 +467,50 @@
 			};
 			name = Release;
 		};
+		F982A32224D31CFE006767CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74QV7363RY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = LibrarySDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.kingborn187.LibrarySDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F982A32324D31CFE006767CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74QV7363RY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = LibrarySDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.kingborn187.LibrarySDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -354,6 +528,15 @@
 			buildConfigurations = (
 				F97FB50924CB1C2200C46347 /* Debug */,
 				F97FB50A24CB1C2200C46347 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F982A32124D31CFE006767CE /* Build configuration list for PBXNativeTarget "LibrarySDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F982A32224D31CFE006767CE /* Debug */,
+				F982A32324D31CFE006767CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
