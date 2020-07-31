@@ -7,10 +7,10 @@ public class BookAPI {
 
     public init() {}
 
-    public func getBooks() -> AnyPublisher<LibrarySDK.Record, Error> {
+    public func getBooks() -> AnyPublisher<LibrarySDK.Books, Error> {
         apiManger.makeRequest(to: APIManager.readBooksURL, withHttpMethod: .get)
             .map { $0.data }
-            .decode(type: LibrarySDK.Record.self, decoder: JSONDecoder())
+            .decode(type: LibrarySDK.Books.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
 
