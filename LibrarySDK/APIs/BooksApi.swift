@@ -5,6 +5,8 @@ public class BookAPI {
     private var apiManger = APIManager()
     private var cancellable: AnyCancellable?
 
+    public init() {}
+
     public func getAllBooks() -> AnyPublisher<LibrarySDK.Books, Error> {
         apiManger.makeRequest(to: APIManager.readBooksURL, withHttpMethod: .get)
             .map { $0.data }
