@@ -14,11 +14,10 @@ public class BookAPI {
             .eraseToAnyPublisher()
     }
 
-    public func createNewBook(isbn: String, author: String, title: String) -> AnyPublisher<Book, Error> {
+    public func createNewBook(isbn: String, author: String, title: String) -> AnyPublisher<URLResponse, URLSession.DataTaskPublisher.Failure> {
         let httpBodyParameters = ["isbn": isbn, "author": author, "title": title]
         return apiManger.makeRequest(to: APIManager.createBookURL, httpBody: httpBodyParameters, withHttpMethod: .post)
-            .map { $0.data }
-            .decode(type: LibrarySDK.Book.self, decoder: JSONDecoder())
+            .map { $0.response }
             .eraseToAnyPublisher()
     }
 
