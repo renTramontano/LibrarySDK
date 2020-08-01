@@ -2,7 +2,8 @@ import Foundation
 import Combine
 
 final public class APIManager {
-    public static let baseURL = "http://kingborn187.altervista.org/LibraryREST/libraryAPI"
+    private static let baseURL = "http://kingborn187.altervista.org/LibraryREST/libraryAPI"
+
     public static let readBooksURL = URL(string: baseURL + "/read.php")!
     public static let createBookURL = URL(string: baseURL + "/create.php")!
     public static let deleteBookURL = URL(string: baseURL + "/delete.php")!

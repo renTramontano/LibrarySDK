@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F97FB50E24CB1F5E00C46347 /* BooksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB50D24CB1F5E00C46347 /* BooksApi.swift */; };
 		F97FB51024CB1F6800C46347 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB50F24CB1F6800C46347 /* Book.swift */; };
-		F97FB51424CB20ED00C46347 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB51324CB20ED00C46347 /* Record.swift */; };
+		F97FB51424CB20ED00C46347 /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB51324CB20ED00C46347 /* Books.swift */; };
 		F982A31E24D31CFE006767CE /* LibrarySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97FB50024CB1C2200C46347 /* LibrarySDK.framework */; };
 		F982A32424D31D6F006767CE /* BooksApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2B1C924D2FB0F00D14E7D /* BooksApiTests.swift */; };
 		F982A32524D31D8C006767CE /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F982A2FA24D30D9D006767CE /* OHHTTPStubs.framework */; };
@@ -47,7 +47,7 @@
 		F97FB50424CB1C2200C46347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F97FB50D24CB1F5E00C46347 /* BooksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksApi.swift; sourceTree = "<group>"; };
 		F97FB50F24CB1F6800C46347 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		F97FB51324CB20ED00C46347 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		F97FB51324CB20ED00C46347 /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 		F982A2FA24D30D9D006767CE /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		F982A30024D312E5006767CE /* LibrarySDKMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySDKMocks.swift; sourceTree = "<group>"; };
 		F982A31924D31CFE006767CE /* LibrarySDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibrarySDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				F97FB50F24CB1F6800C46347 /* Book.swift */,
-				F97FB51324CB20ED00C46347 /* Record.swift */,
+				F97FB51324CB20ED00C46347 /* Books.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 				F97FB50E24CB1F5E00C46347 /* BooksApi.swift in Sources */,
 				F97FB51024CB1F6800C46347 /* Book.swift in Sources */,
 				F985E1F024D21659008FE395 /* APIManger.swift in Sources */,
-				F97FB51424CB20ED00C46347 /* Record.swift in Sources */,
+				F97FB51424CB20ED00C46347 /* Books.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

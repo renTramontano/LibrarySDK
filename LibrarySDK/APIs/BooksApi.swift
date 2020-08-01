@@ -14,11 +14,12 @@ public class BookAPI {
             .eraseToAnyPublisher()
     }
 
-    public func createNewBook(isbn: String, author: String, title: String) {
+    public func createNewBook(isbn: String, author: String, title: String) -> AnyPublisher<Book, Error> {
         let httpBodyParameters = ["isbn": isbn, "author": author, "title": title]
-        cancellable = apiManger.makeRequest(to: APIManager.createBookURL, httpBody: httpBodyParameters, withHttpMethod: .post)
-            .sink(receiveCompletion: { print($0) },
-                  receiveValue: { print($0) })
+        return apiManger.makeRequest(to: APIManager.createBookURL, httpBody: httpBodyParameters, withHttpMethod: .post)
+            .map { $0.data }
+            .decode(type: LibrarySDK.Book.self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
     }
 
     public func removeBook(isbn: String) {
