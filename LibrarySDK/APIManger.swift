@@ -5,6 +5,8 @@ final public class APIManager {
     public static let baseURL = "http://kingborn187.altervista.org/LibraryREST/libraryAPI"
     public static let readBooksURL = URL(string: baseURL + "/read.php")!
     public static let createBookURL = URL(string: baseURL + "/create.php")!
+    public static let deleteBookURL = URL(string: baseURL + "/delete.php")!
+    public static let updateBookURL = URL(string: baseURL + "/update.php")!
 
     public func makeRequest(to url: URL, httpBody parameters: [String: String] = [:], withHttpMethod httpMethod: HttpMethod) -> URLSession.DataTaskPublisher {
         let urlRequest = prepareRequest(with: url, parameters: parameters, httpMethod: httpMethod)
